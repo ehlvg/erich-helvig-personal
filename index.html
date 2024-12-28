@@ -3,23 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Erich Helvig</title>
+    <title>Erich Helvig - Web-developer and designer</title>
+    <meta
+      name="description"
+      content="Personal website of Erich Helvig, designer and developer from the Saint Petersburg, creating some beautiful websites using modern technologies"
+    />
+    <meta
+      property="og:title"
+      content="Erich Helvig - Web-developer and designer"
+    />
+    <meta
+      property="og:description"
+      content="Personal website of Erich Helvig, designer and developer from the Saint Petersburg, creating some beautiful websites using modern technologies"
+    />
+    <meta property="og:image" content="./images/og-social.png" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
     />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" type="image/png" />
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- partial:index.partial.html -->
     <main class="main">
-      <div class="avatar-container">
-        <div class="avatar"></div>
-        <h1 class="title">Erich <span class="italic-span">Helvig</span></h1>
-      </div>
+      <img
+        src="./images/avatar.jpg"
+        alt="Portrait of the Erich Helvig (author of the page) in a forest, dressed in the white coat"
+        class="avatar"
+        draggable="false"
+      />
+      <h1
+        class="title"
+        aria-label="Page title with an orange big name of the person"
+      >
+        Erich <span class="italic-span">Helvig</span>
+      </h1>
       <h2 class="subheading blinker">Developer, designer, 20 y. o.</h2>
-
       <article class="bio">
         <p>
           <span class="bold-span">Howdy!</span> I love coding web apps, creating
@@ -44,6 +66,7 @@
             href="https://github.com/ehlvg/Uptask"
             target="_blank"
             class="card-link"
+            aria-label="Link to repository named Uptask"
           >
             <article class="card-body">
               <h3 class="card-title">Uptask</h3>
@@ -55,7 +78,12 @@
           </a>
         </li>
         <li class="card">
-          <a href="http://tatyana-gamuylo.ru" target="_blank" class="card-link">
+          <a
+            aria-label="Link to repository named Tatyana Gamuylo"
+            href="http://tatyana-gamuylo.ru"
+            target="_blank"
+            class="card-link"
+          >
             <article class="card-body">
               <h3 class="card-title">Tatyana Gamuylo</h3>
               <p class="card-text">
@@ -69,6 +97,7 @@
             href="https://github.com/ehlvg/ono-tebe-nado-fd"
             target="_blank"
             class="card-link"
+            aria-label="Link to repository named Ono tebe nado"
           >
             <article class="card-body">
               <h3 class="card-title">Ono Tebe Nado</h3>
@@ -78,6 +107,7 @@
         </li>
         <li class="card">
           <a
+            aria-label="Link to repository named Emojity"
             href="https://github.com/ehlvg/Emojity"
             target="_blank"
             class="card-link"
@@ -92,21 +122,32 @@
         </li>
       </ul>
     </main>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <p>2024. All rights reserved</p>
-      <a
-        href="https://github.com/ehlvg?page=2&tab=repositories"
-        target="_blank"
-        class="profile-link"
-      >
-        <i class="ph ph-github-logo"></i>
-        <p>GitHub Profile</p>
-      </a>
-      <a href="https://ehlvg.t.me" class="profile-link">
-        <i class="ph ph-telegram-logo"></i>
-        <p>Telegram</p>
-      </a>
+      <ul class="links">
+        <li class="link">
+          <a
+            href="https://github.com/ehlvg?page=2&tab=repositories"
+            target="_blank"
+            class="profile-link"
+            aria-label="Proceed to GitHub profile"
+          >
+            <i class="ph ph-github-logo"></i>
+            <p>GitHub Profile</p>
+          </a>
+        </li>
+        <li class="link">
+          <a
+            href="https://ehlvg.t.me"
+            target="_blank"
+            class="profile-link"
+            aria-label="Proceed to Telegram profile"
+          >
+            <i class="ph ph-telegram-logo"></i>
+            <p>Telegram</p>
+          </a>
+        </li>
+      </ul>
     </footer>
-    <!-- partial -->
   </body>
 </html>
